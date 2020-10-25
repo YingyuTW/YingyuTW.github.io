@@ -1,13 +1,82 @@
 body{
-  background-color: #333333;
+  margin: 0px;
 }
 
-#demo{
+html {
+  scroll-padding-top: 90px; /* height of your sticky header */
+}
+
+.header{
+  align-items: center;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.name{
+  color: white;
+  font-family: tahoma;
+  font-size: 36px;
+}
+
+.email{
+  color: #DDDDDD;
+  font-family: arial;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.menu{
   color: white;
   display: flex;
+  flex-direction: row;
+  font-family: arial;
+  margin-right: 50px;
+}
+
+.button{
+  margin: 5px;
+  padding: 5px;
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+}
+
+.contentContainer1{
+  align-items: center;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 130px;
+}
+
+.profilePhoto{
+  border-radius: 50%;
+  width: 200px;
+}
+
+.selfIntroContainer{
+  padding: 0px 50px;
+}
+
+.selfIntroTitle{
+  color: #F96870;
+  display: flex;
+  flex-direction: row;
   font-family: roboto;
-  font-size: 54px;
-  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .char{
@@ -15,10 +84,79 @@ body{
   animation-fill-mode: forwards;
   animation-name: move;
   transform: translateX(-1500px);
+  padding-right: 6px;
 }
 
-.char:hover{
-  filter: blur(2px);
+.selfIntroText{
+  color: #444444;
+  font-family: arial;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contentContainer2{
+  background-color: #CCCCCC;
+  padding: 32px;
+}
+
+.sectionInCV{
+  padding: 20px 0px;
+}
+
+.titleInCV{
+  color: #F96870;
+  font-family: roboto;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.elementInCV{
+  color: #444444;
+  display: flex;
+  flex-direction: row;
+  font-family: arial;
+  font-size: 15px;
+  line-height: 22px;
+  justify-content: space-between;
+}
+
+.element1{
+  width: 75%;
+}
+
+.contentContainer3{
+  background-color: #EEEEEE;
+  padding: 32px;
+}
+
+.titleInSection3{
+  color: #F96870;
+  font-family: roboto;
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.researchContent{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.researchFrameworkImg{
+  padding: 20px 0px;
+  width: 500px;
+}
+
+.researchIntro{
+  color: #444444;
+  font-family: arial;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 64px;
+  padding-top: 20px;
 }
 
 @keyframes move{

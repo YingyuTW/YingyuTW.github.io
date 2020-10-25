@@ -1,11 +1,11 @@
 const demo = document.getElementById("demo");
 const title = demo.innerHTML;
-const charArray = title.split("");
+const charArray = title.split(" ");
 
 let animationHTML = "";
 
 charArray.forEach((char, index) => {
-  animationHTML = animationHTML + "<div class='char' style='animation-delay: "+index+"s'>"+char+"</div>";
+  animationHTML = animationHTML + "<div class='char' style='animation-delay: "+index*0.3+"s'>"+char+"</div>";
 })
 
 demo.innerHTML = animationHTML;
